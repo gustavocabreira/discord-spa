@@ -4,8 +4,18 @@ export default defineNuxtConfig({
   modules: ["nuxt-auth-sanctum"],
   sanctum: {
     baseUrl: 'http://localhost',
+    redirectIfAuthenticated: true,
     endpoints: {
       login: '/api/auth/login',
     }
-  }
+  },
+  css: [
+    '~/assets/css/main.css',
+  ],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })

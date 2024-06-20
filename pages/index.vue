@@ -1,5 +1,5 @@
 <template>
-  <div class="ml-8 text-4xl font-bold">{{ user.name }}</div>
+  <div class="">{{ user.name }}</div>
 </template>
 
 <script setup>
